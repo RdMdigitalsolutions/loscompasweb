@@ -1,8 +1,0 @@
----
-interface Props { eyebrow?: string; title: string; accent?: 'pink' | 'yellow' | 'turquoise' | 'coral'; }
-const { eyebrow, title, accent = 'yellow' } = Astro.props;
----
-<header class={`section-heading accent-${accent}`}>
-  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-  <h2>{title}</h2>
-</header>
