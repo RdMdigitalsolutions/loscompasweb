@@ -64,7 +64,7 @@ h2 { margin: 0; font-size: clamp(4.2rem, 17vw, 9rem); line-height: .82; letter-s
 .hero h1 em { color: var(--color-pink); font-style: normal; text-shadow: 3px 3px 0 var(--color-cream); }
 .hero-lead { max-width: 620px; margin: 1.8rem 0; font-size: clamp(1.08rem, 4vw, 1.34rem); font-weight: 700; }
 .hero-art { position: relative; width: min(78vw, 420px); margin-inline: auto; }
-.hero-art img { position: relative; z-index: 2; width: 100%; aspect-ratio: 1; object-fit: cover; border: 5px solid var(--color-cream); border-radius: 50%; box-shadow: 14px 14px 0 var(--color-pink); }
+.hero-art img { position: relative; z-index: 2; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; border: 5px solid var(--color-cream); border-radius: 50%; box-shadow: 14px 14px 0 var(--color-pink); }
 .sunburst { position: absolute; inset: -30px; border-radius: 50%; opacity: .8; background: repeating-conic-gradient(var(--color-yellow) 0 2deg, transparent 2deg 8deg); }
 .stamp { position: absolute; z-index: 4; width: 83px; height: 83px; display: grid; place-items: center; border: 3px solid var(--color-cream); border-radius: 50%; color: var(--color-ink); background: var(--color-turquoise); font-family: var(--font-display); font-size: 1.3rem; line-height: .85; text-align: center; text-transform: uppercase; transform: rotate(-11deg); }
 .stamp-one { left: -13px; bottom: 0; }
