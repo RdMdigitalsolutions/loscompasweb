@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taquería Los Compas | Tacos mexicanos en Almuñécar</title>
+  <meta name="description" content="Tacos con todo menos miedo. Auténtica taquería mexicana en Almuñécar: tacos, combos, cervezas mexicanas y postres con cajeta.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#21120d">
+  <link rel="canonical" href="./">
+  <link rel="icon" type="image/png" href="assets/images/logo-los-compas.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Taquería Los Compas · Almuñécar">
+  <meta property="og:description" content="El auténtico sabor de México. Tacos con todo menos miedo.">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="assets/images/logo-los-compas.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Restaurant","name":"Taquería Los Compas","image":"assets/images/logo-los-compas.png","telephone":"+34604455286","priceRange":"€€","servesCuisine":"Mexicana","address":{"@type":"PostalAddress","streetAddress":"Calle Bilbao, 2, Local 1","addressLocality":"Almuñécar","addressRegion":"Granada","addressCountry":"ES"}}
+  </script>
+  <script defer src="data/restaurant.js"></script>
+  <script defer src="data/menu.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Los Compas, inicio">
+        <img src="assets/images/logo-los-compas.png" width="64" height="64" alt="Taquería Los Compas">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Abrir menú</span><i></i><i></i><i></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#carta">Carta</a><a href="#favoritos">Más pedidos</a><a href="#bebidas">Bebidas</a><a href="#ubicacion">Ubicación</a>
+        <a class="nav-cta" data-link="whatsapp" href="https://wa.me/34604455286">Pedir por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero dark-texture" aria-labelledby="hero-title">
+      <div class="papel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker">Taquería mexicana · Almuñécar</p>
+          <h1 id="hero-title">Tacos con todo<br><em>menos miedo</em></h1>
+          <p class="hero-lead">Ven con hambre. Sal con historias. Aquí la tortilla es de maíz, la salsa es casera y el sabor no pide permiso.</p>
+          <div class="button-row">
+            <a class="button button-yellow" href="#carta">Ver la carta <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" data-link="whatsapp" href="https://wa.me/34604455286">Reservar mesa</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="sunburst"></div>
+          <img src="assets/images/logo-los-compas.png" width="640" height="640" alt="">
+          <span class="stamp stamp-one">100%<br>maíz</span><span class="stamp stamp-two">¡Órale!</span>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><div>ALMUÑÉCAR ✦ TACOS ✦ CANTINA ✦ SALSAS CASERAS ✦ ALMUÑÉCAR ✦ TACOS ✦ CANTINA ✦ SALSAS CASERAS ✦</div></div>
+    </section>
+
+    <section class="section cream-section intro-section" aria-labelledby="intro-title">
+      <div class="shell intro-grid">
+        <div class="reveal"><p class="kicker ink">No hacemos tacos tímidos</p><h2 id="intro-title">México se vino<br><span>a la costa.</span></h2></div>
+        <div class="intro-copy reveal"><p>Recetas con raíz, nombres con guasa y esa clase de picante que te hace pedir otra ronda.</p><p>Todo se come con las manos. Y sin vergüenza. Pide cuatro para salir con la panza contenta.</p><a class="text-link" href="#favoritos">Empieza por los favoritos →</a></div>
+      </div>
+    </section>
+
+    <section class="section favorites-section" id="favoritos" aria-labelledby="favorites-title">
+      <div class="shell">
+        <div class="section-head reveal"><div><p class="kicker">Los favoritos de la banda</p><h2 id="favorites-title">Vuelan de<br>la cocina.</h2></div><span class="big-flame" aria-hidden="true">🔥</span></div>
+        <div class="favorites-grid" id="favorites-grid"></div>
+      </div>
+    </section>
+
+    <section class="section menu-section dark-texture" id="carta" aria-labelledby="menu-title">
+      <div class="shell">
+        <div class="menu-heading reveal"><div><p class="kicker">Tortilla de maíz · puro sabor</p><h2 id="menu-title">La carta</h2></div><p>Elige sin miedo.<br><b>El antojo manda.</b></p></div>
+        <div class="filters" role="group" aria-label="Filtrar la carta" id="menu-filters">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+          <button class="filter" type="button" data-filter="tacos" aria-pressed="false">Tacos</button>
+          <button class="filter" type="button" data-filter="featured" aria-pressed="false">Más pedidos</button>
+          <button class="filter" type="button" data-filter="spicy" aria-pressed="false">Picante</button>
+          <button class="filter" type="button" data-filter="vegetarian" aria-pressed="false">Vegetariano</button>
+          <button class="filter" type="button" data-filter="drinks" aria-pressed="false">Bebidas</button>
+          <button class="filter" type="button" data-filter="desserts" aria-pressed="false">Postres</button>
+        </div>
+        <p class="results-status sr-only" id="results-status" aria-live="polite"></p>
+        <div class="menu-list" id="menu-list"></div>
+      </div>
+    </section>
+
+    <section class="section combos-section" aria-labelledby="combos-title">
+      <div class="shell">
+        <p class="kicker ink reveal">Pa' salir contento</p><h2 id="combos-title" class="reveal">Combos<br>y menús</h2>
+        <div class="combo-grid" id="combo-grid"></div>
+      </div>
+    </section>
+
+    <section class="section salsa-section cream-section" aria-labelledby="salsa-title">
+      <div class="shell salsa-layout">
+        <div class="reveal"><p class="kicker ink">Tú decides hasta dónde</p><h2 id="salsa-title">Ponle<br>sabor.</h2><p class="salsa-lead">Todos los tacos vienen con nuestras salsas caseras. De paseo por el campo a volcán en erupción.</p></div>
+        <div class="salsa-list" id="salsa-list"></div>
+      </div>
+    </section>
+
+    <section class="section drinks-section" id="bebidas" aria-labelledby="drinks-title">
+      <div class="shell drinks-grid">
+        <div class="drinks-copy reveal"><p class="kicker ink">Pa' mojar la garganta</p><h2 id="drinks-title">Una bien<br><span>fría.</span></h2><p>Cervezas mexicanas, micheladas, margaritas y aguas frescas para bajar el fuego. O echarle más leña.</p></div>
+        <div class="cantina-card reveal"><span class="cantina-star" aria-hidden="true">✦</span><p>La recomendación</p><h3>Frozen<br>margarita</h3><strong>7,50 €</strong><small>Tequila, triple sec y lima. Dulce, cítrica y perfecta para el calor.</small></div>
+      </div>
+    </section>
+
+    <section class="section location-section dark-texture" id="ubicacion" aria-labelledby="location-title">
+      <div class="shell location-grid">
+        <div class="reveal"><p class="kicker">Aquí empieza la fiesta</p><h2 id="location-title">Nos vemos<br>en el barrio.</h2><address><strong data-text="address">Calle Bilbao, 2, Local 1</strong><br><span data-text="city">Almuñécar</span></address><a class="phone-link" data-link="phone" href="tel:+34604455286"><span data-text="phone">604 455 286</span></a></div>
+        <a class="map-card reveal" data-link="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Taquer%C3%ADa%20Los%20Compas%20Almu%C3%B1%C3%A9car" target="_blank" rel="noopener"><span class="pin" aria-hidden="true">●</span><b>Los Compas</b><small>Abre la ruta en Google Maps</small><span class="map-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid"><img src="assets/images/logo-los-compas.png" width="92" height="92" alt="Taquería Los Compas"><div><b>Tacos con todo<br><em>menos miedo.</em></b><p>Auténtico sabor mexicano en Almuñécar.</p></div><a href="#inicio">Volver arriba ↑</a></div>
+    <div class="shell legal"><span>© <span id="year"></span> Taquería Los Compas</span><span>Todos los precios incluyen IVA · Consulta al personal sobre alérgenos.</span></div>
+  </footer>
+
+  <nav class="mobile-actions" aria-label="Acciones rápidas">
+    <a href="#carta"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg><span>Carta</span></a>
+    <a data-link="whatsapp" href="https://wa.me/34604455286"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5zM9 8c.3 3 2 5 5 6"/></svg><span>WhatsApp</span></a>
+    <a data-link="maps" href="#ubicacion"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11zM12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><span>Llegar</span></a>
+  </nav>
+</body>
+</html>
