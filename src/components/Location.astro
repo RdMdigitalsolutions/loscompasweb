@@ -1,0 +1,14 @@
+---
+import SectionTitle from './SectionTitle.astro';
+import { restaurant } from '../data/restaurant';
+---
+<section id="ubicacion" class="section location-section">
+  <div class="shell location-grid">
+    <div class="location-copy">
+      <SectionTitle eyebrow="Calle Bilbao, Almuñécar" title="¿Te vienes\na por unos tacos?" accent="turquoise" />
+      <address><b>{restaurant.name}</b><br />{restaurant.addressLine}<br />{restaurant.city}<br /><a href={restaurant.telephoneUrl}>{restaurant.phone}</a></address>
+      <div class="location-actions"><a class="button button-yellow" href={restaurant.mapsUrl} target="_blank" rel="noreferrer">📍 Cómo llegar</a><a class="button button-outline" href={restaurant.telephoneUrl}>Llamar</a><a class="button button-whatsapp" href={restaurant.whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a></div>
+    </div>
+    <a class="map-card" href={restaurant.mapsUrl} target="_blank" rel="noreferrer" aria-label="Abrir Taquería Los Compas en Google Maps"><div class="map-streets" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="map-pin">🌮</span><b>Los Compas</b><small>Abrir en Google Maps →</small></a>
+  </div>
+</section>

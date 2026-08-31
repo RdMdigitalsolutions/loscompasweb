@@ -1,0 +1,19 @@
+---
+import SectionTitle from './SectionTitle.astro';
+const groups = [
+  { title: 'Cerveza nacional', items: [['Tercio de Alhambra Especial','3,00 €'],['Tercio de Alhambra 1925','3,50 €'],['Caña Doble Brutus','3,00 €'],['Caña Brutus','2,00 €']] },
+  { title: 'Cervezas mexicanas', items: [['Corona','3,80 €'],['Negra Modelo','3,80 €'],['Modelo Especial','3,80 €'],['Pacífico','3,80 €'],['Corona 0,0','3,80 €']] },
+];
+const specials = [['Chelada','5,50 €','Refrescante mezcla de cerveza con lima, sal y salsas mexicanas.'],['Michelada','6,50 €','Cerveza con salsas, lima, sal y Clamato.'],['Frozen margarita','7,50 €','Tequila, triple sec y zumo de lima bien congelado.'],['Bulldog','7,50 €','Frozen margarita coronada con una cerveza invertida.'],['Chupito de tequila de verdad','5,00 €',''],['Chupito de mezcal','5,00 €',''],['Cubeta mexicana','17,50 €','Cinco cervezas mexicanas a elegir, bien frías y servidas en hielo.'],['Cubeta de Alhambra','13,50 €','Cinco cervezas Alhambra Especial servidas en cubeta con hielo.']];
+const soft = [['Refrescos','2,75 €','Coca-Cola · Fanta · Nestea · Aquarius'],['Refrescos mexicanos / Jarritos','4,50 €','Piña · Guayaba · Mango · Mandarina · Pomelo'],['Agua natural','2,50 €',''],['Agua con gas','3,50 €',''],['Aguas frescas mexicanas','3,00 €','']];
+---
+<section id="bebidas" class="section drinks-section">
+  <div class="shell">
+    <SectionTitle eyebrow="Bien frías" title="Pa' mojar\nla garganta" accent="pink" />
+    <div class="drinks-board">
+      <div class="beer-groups">{groups.map(group => <article><h3>{group.title}</h3>{group.items.map(item => <p class="price-line"><span>{item[0]}</span><i></i><strong>{item[1]}</strong></p>)}</article>)}</div>
+      <div class="drink-specials">{specials.map(item => <article class="drink-item"><div><h3>{item[0]}</h3>{item[2] && <p>{item[2]}</p>}</div><strong>{item[1]}</strong></article>)}</div>
+      <div class="soft-drinks">{soft.map(item => <article><p class="price-line"><b>{item[0]}</b><i></i><strong>{item[1]}</strong></p>{item[2] && <small>{item[2]}</small>}</article>)}</div>
+    </div>
+  </div>
+</section>

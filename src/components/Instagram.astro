@@ -1,0 +1,14 @@
+---
+import SectionTitle from './SectionTitle.astro';
+import { restaurant } from '../data/restaurant';
+const configured = Boolean(restaurant.instagramUrl);
+---
+<section class="section social-section">
+  <div class="shell">
+    <SectionTitle eyebrow="La banda sigue aquí" title="Síguenos\ny vente con hambre" accent="pink" />
+    <div class="social-grid" aria-label="Espacio preparado para publicaciones de Instagram">
+      {['Tacos que vuelan', 'Salsita brava', 'La banda', 'Margaritas frías'].map((label, i) => <div class={`social-tile social-${i + 1}`}><span>{i % 2 ? '✦' : '🌮'}</span><b>{label}</b></div>)}
+    </div>
+    {configured ? <a class="button button-pink" href={restaurant.instagramUrl} target="_blank" rel="noreferrer">Ver Instagram</a> : <span class="button button-muted" aria-disabled="true" title="Instagram pendiente de configurar">Instagram · próximamente</span>}
+  </div>
+</section>

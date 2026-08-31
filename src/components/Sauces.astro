@@ -1,0 +1,17 @@
+---
+import SectionTitle from './SectionTitle.astro';
+const sauces = [
+  ['Salsa de tomatillo', 'Verde, fresca y sabrosa. No pica nada.', 0],
+  ['Aguacate y jalapeño', 'Cremosa y con un jalapeñito buena onda. Pica poquito.', 1],
+  ['Chipotle', 'Ahumadita, dulcecita y con carácter.', 2],
+  ['Salsa de árbol', 'La más brava de la casa. Roja, intensa y directa al corazón.', 3],
+];
+---
+<section class="section sauces-section">
+  <div class="shell">
+    <SectionTitle eyebrow="Caseras, como debe ser" title="Salsas\npa' ponerle sabor" accent="pink" />
+    <div class="sauce-grid">
+      {sauces.map(([name, text, level], i) => <article class={`sauce sauce-${i + 1} reveal`}><span class="sauce-drop" aria-hidden="true"></span><div><h3>{name}</h3><p>{text}</p><p class="chilli-rating" aria-label={`${level} de 3 en picante`}>{level === 0 ? 'Cero miedo' : '🌶️'.repeat(Number(level))}</p></div></article>)}
+    </div>
+  </div>
+</section>
